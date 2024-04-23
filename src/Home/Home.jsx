@@ -9,9 +9,8 @@ export default function Home() {
     const [search, setSearch] = useState("");
     const [FoodData, setFoodData] = useState([]);
 
-
     async function getdata() {
-        const searchUrl = `https://api.edamam.com/api/recipes/v2?type=public&q=${search ? search :'curd'}&app_id=f25e046e&app_key=%2036e244e7157b2309aa666e74cdded22f%09`
+        const searchUrl = `https://api.edamam.com/api/recipes/v2?type=public&q=${search ? search : 'curd'}&app_id=f25e046e&app_key=%2036e244e7157b2309aa666e74cdded22f%09 `
         let resp = await fetch(searchUrl);
         let data = await resp.json();
         // console.log(data.hits)
@@ -20,19 +19,33 @@ export default function Home() {
 
     useEffect(() => {
         getdata();
+        window.addEventListener('scroll', handleScroll); 
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        }
     }, [])
 
+    const handleScroll = () => {
+        const scrollY = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const documentHeight = document.documentElement.scrollHeight;
+
+        if (scrollY + windowHeight >= documentHeight-1) {
+            console.log('reach end');
+        }
+    }
+
     useEffect(() => {
-        if(search.length >= 3){
-            debounce(getdata,1000);
-        }else if(search.length === 0){
-            getdata();
+        if (search.length >= 3) {
+            debounce(getdata, 1000);
+        } else if (search.length === 0) {
+            debounce(getdata, 1000);
         }
     }, [search])
 
     let prevId;
-    function debounce(fun,delay){
-        if(prevId){
+    function debounce(fun, delay) {
+        if (prevId) {
             clearTimeout(prevId);
         }
         prevId = setTimeout(() => {

@@ -8,9 +8,18 @@ import SearchContext from "../Context/SearchContext";
 export default function SearchSection() {
 
     const [showFilter, setShowFilter] = useState(false);
+    const [exit,setExit] = useState(false);
 
     function toggleFilter() {
-        setShowFilter(prev => !prev);
+        if(!showFilter){
+            setShowFilter(true);
+            setExit(false);
+        }else{
+            setExit(true);
+            setTimeout(() => {
+                setShowFilter(false);
+            }, 500);
+        }
     }
 
     return (
@@ -21,7 +30,7 @@ export default function SearchSection() {
                     {!showFilter ? 'show filter' : 'hide filter'}
                 </ButtonOne>
             </section>
-            {showFilter && <Filter setShowFilter={setShowFilter} />}
+            {showFilter && <Filter toggle={toggleFilter} exit={exit} setexit={setExit}/>}
         </>
     )
 }

@@ -7,13 +7,20 @@ export default function SearchBar() {
     const search_context = useContext(SearchContext);
     console.log(search_context)
 
-    function handleInput(e){
+    function handleInput(e) {
         search_context.searchRecepie[1](e.target.value);
+    }
+
+    function handleSubmit(e) {
+        e.preventDefault();
     }
     return (
         <div className={styles.search_bar}>
-            <IoSearchOutline size={'1.2em'} color="#244cac"/>
-            <form className={styles.search_form} action="">
+            <IoSearchOutline size={'1.2em'} color="#244cac" />
+            <form className={styles.search_form}
+                action=""
+                onSubmit={handleSubmit}
+            >
                 <input type="text"
                     className={styles.search_input}
                     name="search"

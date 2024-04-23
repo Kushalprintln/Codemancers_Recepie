@@ -2,10 +2,19 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
+    min-height: 305px;
+}
+.main_blank{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 @media screen and (max-width: 1020px) {
     .main{
         grid-template-columns: 1fr 1fr;
+    }
+    .main_blank img{
+        width: 300px;
     }
 }
 @media screen and (max-width: 770px) {

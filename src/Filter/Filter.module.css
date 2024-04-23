@@ -1,12 +1,20 @@
 .filter{
-    /* border: 1px solid black; */
     width: 62%;
     margin: 20px auto;
-    /* height: 350px; */
     border-radius: 20px;
     padding: 30px;
     background-color: #f0f7ff;
     position: relative;
+    animation: slide-down .5s ease-out;
+}
+.exit{
+    width: 62%;
+    margin: 20px auto;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: #f0f7ff;
+    position: relative;
+    animation: slide-up .5s ease-out;
 }
 .close_filter{
     position: absolute;
@@ -24,6 +32,25 @@
     justify-content: flex-end;
     gap: 20px;
 }
-/* .filter_heading,.button_section{
-    border: 1px solid black;
-} */
+
+@keyframes slide-down{
+    0%{
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-up{
+    0%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+}
