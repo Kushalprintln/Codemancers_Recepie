@@ -1,0 +1,31 @@
+.foodcard {
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #f0f7ff;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+.food_img {
+    width: 100%;
+}
+
+.food_info {
+    padding: 32px;
+}
+
+.food_info h3 {
+    color: #2c47b1;
+    text-transform: capitalize;
+}
+
+.food_info p {
+    margin: 16px 0px;
+    color: #29386d;
+    text-transform: capitalize;
+}
+
+.foodcard:hover {
+    /* transform: scale(1.02); */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

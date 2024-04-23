@@ -1,0 +1,23 @@
+.filtericon{
+    width: fit-content;
+    text-align: center;
+    color: #244cac;
+    cursor: pointer;
+}
+.filtericon h5{
+    text-transform: capitalize;
+    margin-top: 3px;
+}
+.icon_containter{
+    width: 60px;
+    height: 60px;
+    border: 1px solid;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.filtericon:hover{
+    transform: scale(1.05);
+}

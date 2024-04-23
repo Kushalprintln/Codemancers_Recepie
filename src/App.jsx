@@ -1,3 +1,4 @@
+import { Outlet } from 'react-router-dom'
 import './App.css'
 import Container from './Container/Container'
 import Footer from './Footer/Footer'
@@ -10,8 +11,8 @@ function App() {
     <>
       <Container>
         <Navbar />
-        <Home/>
-        <Footer/>
+        <Outlet />
+        <Footer />
       </Container>
     </>
   )

@@ -1,10 +1,14 @@
 .filter_row{
-    /* border: 1px solid black; */
-    height: 120px;
-    margin: 5px 0px;
+    margin: 20px 0px;
 }
 .row_heading{
     text-transform: capitalize;
     color: #244cac;
     font-size: 16px;
+}
+.icon_container{
+    margin: 5px 0px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
