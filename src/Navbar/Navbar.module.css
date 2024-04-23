@@ -1,0 +1,18 @@
+.navbar{
+    padding: 48px 16px 32px;
+    display: flex;
+    align-items: center;
+}
+/* -------left side--------- */
+.nav_left{
+    width: 160px;
+}
+.nav_left .logo_img{
+    width: 100%;
+}
+/* ---------mid part--------- */
+.nav_mid{
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
