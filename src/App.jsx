@@ -12,7 +12,6 @@ function App() {
       <Container>
         <Navbar />
         <Outlet />
-        <Home/>
         <Footer />
       </Container>
     </>
