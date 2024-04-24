@@ -1,5 +1,5 @@
 import React from "react";
-import { useLoaderData, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import styles from './Recepie.module.css';
 import { LuChefHat } from "react-icons/lu";
 import { BiCircleThreeQuarter } from "react-icons/bi";
