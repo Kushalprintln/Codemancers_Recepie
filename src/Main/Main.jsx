@@ -4,6 +4,9 @@ import FoodCard from "../Cards/FoodCard";
 import loader from '../Images/loader.gif'
 import { v4 as uuidv4 } from 'uuid';
 
+// Main section for displaying food card 
+// using uuid dependency for unique keys;
+
 export default function Main({data}){
     return (
         <div className={data.length !==0 ?styles.main :styles.main_blank}>

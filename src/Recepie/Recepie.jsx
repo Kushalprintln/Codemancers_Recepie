@@ -7,6 +7,14 @@ import { FaChevronLeft } from "react-icons/fa";
 import Ingredients from "../Cards/Ingredients";
 import ButtonOne from "../Buttons/ButtonOne/ButtonOne";
 
+// ON RECEPIE PAGE ONLY FEW THINGS ARE CHENAGING AS PE THE BACEND DATA 
+// IMAGE
+// NAME OF DISH
+// DIET
+// CATAGORY OF FOOD
+// INGREDIENT'S LIST
+// REST TEXT IS STATIC
+
 export default function Recepie() {
     const location = useLocation();
     const nav = useNavigate();

@@ -2,6 +2,8 @@ import React from "react";
 import styles from './FoodCard.module.css';
 import { Link } from "react-router-dom";
 
+// FoodCard Component for displaying all the food items
+
 export default function FoodCard({ data }) {
     return (
         <div className={styles.foodcard}>

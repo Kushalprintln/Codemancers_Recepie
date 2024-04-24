@@ -2,6 +2,8 @@ import React from "react";
 import styles from './Footer.module.css';
 import { FaHeart } from "react-icons/fa";
 
+// Static Footer Component;
+
 export default function Footer() {
     return (
         <div className={styles.footer}>

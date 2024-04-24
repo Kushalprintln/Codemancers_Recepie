@@ -2,6 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
+// IMPORTING BROWSER ROUTER AND ALL PAGES
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './Home/Home.jsx'
 import About from './About/About.jsx'

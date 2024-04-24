@@ -1,6 +1,8 @@
 import React from "react";
 import styles from './About.module.css';
 
+// About page having the static content of the  website;
+
 export default function About(){
     return (
         <div className={styles.about}>

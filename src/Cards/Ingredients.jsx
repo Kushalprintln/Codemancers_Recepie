@@ -2,6 +2,8 @@ import React from "react";
 import styles from './Ingredients.module.css';
 import { v4 as uuidv4 } from 'uuid';
 
+// Ingredients Cards for displaying all the ingredienst list 
+// using In Recipie page;
 
 export default function Ingredients({list}){
     return (

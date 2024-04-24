@@ -5,7 +5,7 @@ import SearchContext from "../Context/SearchContext";
 
 export default function SearchBar() {
     const search_context = useContext(SearchContext);
-    console.log(search_context)
+
 
     function handleInput(e) {
         search_context.searchRecepie[1](e.target.value);
