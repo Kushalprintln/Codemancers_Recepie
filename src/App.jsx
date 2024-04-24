@@ -3,6 +3,7 @@ import './App.css'
 import Container from './Container/Container'
 import Footer from './Footer/Footer'
 import Navbar from './Navbar/Navbar'
+import Home from './Home/Home'
 
 function App() {
 
@@ -10,7 +11,8 @@ function App() {
     <>
       <Container>
         <Navbar />
-        <Outlet />
+        {/* <Outlet /> */}
+        <Home/>
         <Footer />
       </Container>
     </>
