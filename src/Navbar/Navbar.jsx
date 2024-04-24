@@ -6,6 +6,7 @@ import logo from '../Images/Recepielogo.jpg'
 import ButtonOne from "../Buttons/ButtonOne/ButtonOne";
 import ButtonTwo from "../Buttons/ButtonTwo/ButtonTwo";
 import { Link } from "react-router-dom";
+// adding check commnet in navbar
 
 export default function Navbar() {
     return (
