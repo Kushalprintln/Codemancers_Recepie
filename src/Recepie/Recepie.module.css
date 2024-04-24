@@ -2,6 +2,7 @@
     /* border: 1px solid black; */
     max-width: 1020px;
     margin: 0px auto;
+    color: #244cac;
 }
 .poster{
     width: 60%;
@@ -44,4 +45,40 @@
     align-items: center;
     font-weight: 700;
     gap: 5px;
+}
+.diet_cat{
+    font-weight: 700;
+}
+.label{
+    color: #b6c1d0;
+    display: inline-block;
+    min-width: 80px;
+    margin-right: 25px;
+}
+.about_section{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+}
+.about_left{
+    width: 60%;
+    font-weight: 500;
+}
+.about_right{
+    width: 35%;
+}
+.instruction_list{
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 1020px) {
+    .info_section{
+        flex-direction: column;
+    }
+    .about_section{
+        flex-direction: column-reverse;
+    }
+    .poster,.about_left,.info,.about_right{
+        width: 100%;
+    }
 }

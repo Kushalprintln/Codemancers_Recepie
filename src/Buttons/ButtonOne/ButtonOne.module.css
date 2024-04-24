@@ -7,6 +7,9 @@
     border-radius: 15px;
     cursor: pointer;
     text-transform: capitalize;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn_one:hover{
