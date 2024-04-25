@@ -3,17 +3,16 @@ import './App.css'
 import Container from './Container/Container'
 import Footer from './Footer/Footer'
 import Navbar from './Navbar/Navbar'
-import Home from './Home/Home'
 
 function App() {
 
   return (
     <>
-      {/* <Container> */}
+      <Container>
         <Navbar />
         <Outlet />
         <Footer />
-      {/* </Container> */}
+      </Container>
     </>
   )
 }
